@@ -4,7 +4,8 @@
   "description": "",
   "main": "client/index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "postinstall": "npm start"
   },
   "babel": {
     "presets": [
