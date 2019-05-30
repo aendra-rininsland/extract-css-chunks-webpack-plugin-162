@@ -47,7 +47,7 @@ module.exports = async (env = "development") => {
     devtool: "source-map",
     plugins: [
       new ExtractCss(),
-      // new HotModuleReplacementPlugin(),
+      new HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
         template: "./server/index.js",
         templateParameters: {},
