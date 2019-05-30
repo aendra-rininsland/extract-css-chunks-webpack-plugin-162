@@ -4,13 +4,16 @@
  */
 
 import React from "react";
-
+import IAmPink from "./child";
+import "./styles.scss";
+console.dir(styles);
 const App = () => {
-  // The following will cause html-webpack-plugin to throw. This is expected.
-  // However, the resulting stack trace is nigh-on unusable due to lacking
-  // proper sourcemap support.
-  const numOfDivs = document.querySelectorAll("div").length;
-  return <div>hi there are {numOfDivs} divs</div>;
+  return (
+    <div>
+      hi there
+      <IAmPink />
+    </div>
+  );
 };
 
 export default App;
